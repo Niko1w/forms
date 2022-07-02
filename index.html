@@ -13,11 +13,12 @@
     <form action="#" class="form">
         <label>
             Enter your email
-            <input type="text">
+            <input type="text" required>
         </label>
+        
         <label>
             Enter your password
-            <input type="text">
+            <input type="text" required>
         </label>
 
         <label for="city">Check your city</label>
@@ -28,9 +29,13 @@
             <option value="madrid"> Madrid</option>
         </select>
 
+        <label>
+            Enter your zipcode
+            <input type="number" min="0" max="99999" required disabled>
+        </label>
 
         <label for="agree">I know that im doing</label>
-        <input name="agreeName" id="agree" type="checkbox">
+        <input name="agreeName" id="agree" checked type="checkbox">
 
         <label for="textarea">Enter your description</label>
         <textarea name="textareaName" rows=3 id="textarea" ></textarea>
